@@ -9,28 +9,28 @@ export const ContentCards = () => {
       type: CONTENT_TYPES.RECOMMENDATION,
       title: 'Amazing Restaurant',
       description: 'Best Italian food in town',
-      image: 'https://via.placeholder.com/300x200/ff6b6b/ffffff?text=Restaurant'
+      image: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&h=400&fit=crop&auto=format&dpr=2'
     },
     {
       id: 'music-card-1',
       type: CONTENT_TYPES.MUSIC,
       title: 'New Album Release',
       description: 'Listen to the latest hits',
-      image: 'https://via.placeholder.com/300x200/4ecdc4/ffffff?text=Music'
+      image: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&h=400&fit=crop&auto=format&dpr=2'
     },
     {
       id: 'location-card-1',
       type: CONTENT_TYPES.LOCATION,
       title: 'Tourist Attraction',
       description: 'Must-visit places in the city',
-      image: 'https://via.placeholder.com/300x200/45b7d1/ffffff?text=Location'
+      image: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&h=400&fit=crop&auto=format&dpr=2'
     },
     {
       id: 'video-card-1',
       type: CONTENT_TYPES.VIDEO,
       title: 'Travel Vlog',
       description: 'Amazing travel experiences',
-      image: 'https://via.placeholder.com/300x200/96ceb4/ffffff?text=Video'
+      image: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&h=400&fit=crop&auto=format&dpr=2'
     }
   ];
 
@@ -82,6 +82,7 @@ const ContentCard = ({ id, type, title, description, image }) => {
       <img
         src={image}
         alt={title}
+        referrerPolicy="no-referrer"
         style={{ width: '100%', height: '200px', objectFit: 'cover' }}
       />
 

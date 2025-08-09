@@ -25,6 +25,16 @@ export const CisDashboard = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const formatWithTimezone = (dateStr) => {
+    try {
+      const d = new Date(dateStr);
+      const formatted = d.toLocaleString(undefined, { timeZone: 'UTC', hour12: true });
+      return `${formatted} (UTC)`;
+    } catch {
+      return dateStr;
+    }
+  };
+
   if (loading && !analytics) {
     return <div style={{ padding: '20px', textAlign: 'center' }}>Loading analytics...</div>;
   }
@@ -133,7 +143,7 @@ export const CisDashboard = () => {
                       </span>
                     </div>
                     <div style={{ fontSize: '0.9em', color: '#666' }}>
-                      {new Date(interaction.created_at).toLocaleString()}
+                      {formatWithTimezone(interaction.created_at)}
                     </div>
                   </div>
                   <div style={{ marginTop: '5px', fontSize: '0.9em', color: '#666' }}>
@@ -167,7 +177,7 @@ export const CisDashboard = () => {
                   <div style={{ fontWeight: 'bold', color: '#007bff' }}>
                     {cisUtils.getInteractionTypeName(type)}
                   </div>
-                  <div style={{ fontSize: '1.2em', fontWeight: 'bold', color: '#111827' }}>
+                  <div style={{ fontSize: '1.2em', fontWeight: 'bold' }}>
                     {count}
                   </div>
                 </div>
