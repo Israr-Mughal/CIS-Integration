@@ -1,6 +1,6 @@
 // CIS Configuration for React App
 export const CIS_CONFIG = {
-    BASE_URL: 'http://54.198.209.187',
+    BASE_URL: '',
     ENDPOINTS: {
         SINGLE_INTERACTION: '/cis/interactions',
         BATCH_INTERACTIONS: '/cis/interactions/batch',

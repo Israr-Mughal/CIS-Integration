@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/cis/:path*",
+      "destination": "http://54.198.209.187/cis/:path*"
+    }
+  ]
+}
