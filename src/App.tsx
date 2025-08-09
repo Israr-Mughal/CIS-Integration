@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="App">
       <header style={{
-        backgroundColor: '#282c34',
         padding: '20px',
         color: 'white',
         textAlign: 'center'
@@ -40,7 +39,7 @@ function App() {
         borderTop: '1px solid #dee2e6'
       }}>
         <p style={{ margin: 0, color: '#666' }}>
-          CIS React Integration Demo - Backend running on localhost:8000
+          CIS React Integration Demo
         </p>
       </footer>
     </div>

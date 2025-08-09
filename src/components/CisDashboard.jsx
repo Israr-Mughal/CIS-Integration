@@ -167,7 +167,7 @@ export const CisDashboard = () => {
                   <div style={{ fontWeight: 'bold', color: '#007bff' }}>
                     {cisUtils.getInteractionTypeName(type)}
                   </div>
-                  <div style={{ fontSize: '1.2em', fontWeight: 'bold' }}>
+                  <div style={{ fontSize: '1.2em', fontWeight: 'bold', color: '#111827' }}>
                     {count}
                   </div>
                 </div>

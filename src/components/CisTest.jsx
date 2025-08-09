@@ -43,51 +43,25 @@ export const CisTest = () => {
   };
 
   return (
-    <div style={{
-      padding: '20px',
-      border: '1px solid #ccc',
-      margin: '20px',
-      borderRadius: '8px',
-      backgroundColor: '#f9f9f9'
-    }}>
-      <h3>CIS Integration Test</h3>
-      <div style={{ display: 'flex', gap: '10px', marginBottom: '10px' }}>
+    <div className="card" style={{ margin: '20px' }}>
+      <h3 className="text-xl font-semibold mb-4">CIS Integration Test</h3>
+      <div className="flex space-x-2 mb-3">
         <button
           onClick={testConnection}
           disabled={loading}
-          style={{
-            padding: '10px 15px',
-            backgroundColor: '#007bff',
-            color: 'white',
-            border: 'none',
-            borderRadius: '4px',
-            cursor: loading ? 'not-allowed' : 'pointer'
-          }}
+          className="btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {loading ? 'Testing...' : 'Test Connection'}
         </button>
         <button
           onClick={testInteraction}
           disabled={loading}
-          style={{
-            padding: '10px 15px',
-            backgroundColor: '#28a745',
-            color: 'white',
-            border: 'none',
-            borderRadius: '4px',
-            cursor: loading ? 'not-allowed' : 'pointer'
-          }}
+          className="btn-success disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {loading ? 'Recording...' : 'Test Interaction'}
         </button>
       </div>
-      <p style={{
-        padding: '10px',
-        backgroundColor: '#fff',
-        border: '1px solid #ddd',
-        borderRadius: '4px',
-        margin: 0
-      }}>
+      <p className="input-field" style={{ margin: 0 }}>
         {status || 'Click buttons to test CIS integration'}
       </p>
     </div>
