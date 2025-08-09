@@ -18,7 +18,6 @@ import {
   ExternalLink,
   Smartphone,
   Zap,
-  AlertTriangle,
   Activity
 } from 'lucide-react';
 

@@ -1,8 +1,11 @@
-import React from 'react';
-import { CisTest } from './components/CisTest';
-import { InteractionTester } from './components/InteractionTester';
-import { CisDashboard } from './components/CisDashboard';
-import { ContentCards } from './components/ContentCards';
+// @ts-ignore
+import { CisTest } from './components/CisTest.jsx';
+// @ts-ignore
+import { InteractionTester } from './components/InteractionTester.jsx';
+// @ts-ignore
+import { CisDashboard } from './components/CisDashboard.jsx';
+// @ts-ignore
+import { ContentCards } from './components/ContentCards.jsx';
 import './App.css';
 
 function App() {
